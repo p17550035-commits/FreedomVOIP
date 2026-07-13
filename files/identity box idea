@@ -1,0 +1,10 @@
+- Strong encryption already provides privacy; destroying the vault on app deletion adds no real protection.
+- If the vault is encrypted with a hardware‑bound key, attackers cannot decrypt it whether the vault exists or not.
+- Forced vault deletion only harms resilience: users lose access permanently while attackers gain nothing.
+- A well‑designed vault should persist on the device even if the app is removed or reinstalled.
+- The vault should be backed up to the cloud as an encrypted blob, never in plaintext.
+- Recovery should rely on fingerprint/PIN + a recovery key, not phone numbers or authenticator apps.
+- Privacy comes from cryptography and proper key management, not from making the vault fragile.
+- The vault must survive device wipes, OS reinstalls, SIM swaps, and identity lockouts.
+- The app should “reattach” to the existing vault on reinstall instead of creating a new one.
+- Cloud backup + local hardware‑bound encryption ensures both privacy and durability.
